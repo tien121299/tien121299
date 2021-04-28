@@ -1,0 +1,371 @@
+
+@charset "utf-8";
+/* CSS Document */
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	overflow: hidden
+}
+@font-face{
+	src: url( "../font/Fontfabric - Intro Script Demo Medium.otf" );
+	font-family: nam;
+}
+@font-face{
+	src: url(  "../font/BRUSHSCI.TTF");
+	font-family: title
+}
+@font-face{
+	src: url("../font/Canopee.otf");
+	font-family: Canopee
+}
+#wrapper{
+	background: url("../IMG/bia.png");
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	background-repeat: no-repeat;
+	position: relative
+}
+header{
+	width: 100%;
+	height: 105px;
+	display: block;
+	border-bottom: 1px  solid white;
+	position: fixed;
+	z-index: 100;
+}
+.logo{
+	width: 20%;
+	height: 100%;
+	float: left;
+	border-right: 1px solid white;
+	line-height: 105px;
+	display: flex;
+	position: relative;
+	padding-left: 50px;
+}
+.logoo{
+/*	background: white;*/
+	font-size: 50px;
+	font-family: title;	
+/*	color: white;*/
+	display: flex; 
+	float: left;
+	letter-spacing: -2px;
+	padding-left: 10px;
+
+
+}
+.hinh-thoi{
+	height: 100%;
+	width: 25px;
+/*	background: black;*/
+	float: left;
+	display: flex;	
+	align-items: center;
+
+
+}
+.hinh-thoi .hinhthoiiii{
+	width: 15px;
+	height: 15px;
+	transform: rotate(45deg);
+	background: #2b4f60;
+	display: flex; 
+}
+header nav{
+	float:left;
+	width: 65%;
+	height: 105px;
+	
+
+}
+nav ul{
+	list-style: none;
+	float: left;
+	line-height: 105px;	
+}
+nav ul li{
+	display:inline-block;
+	padding: 0 40px 0px 40px;
+/*	background: red*/
+}
+nav ul li a{
+	font-size: 28px;
+	color: #2A5060;
+	text-decoration: none;
+	font-family: Canopee;
+/*	text-transform: uppercase;*/
+	letter-spacing: -1px;
+}
+
+.hinhthoii-to{
+	width: 45px;
+	height: 45px;
+	transform: rotate(45deg);
+	background: #f8a488;
+	position: fixed;
+	top: 25px;
+	right: 55px
+
+}
+
+main{
+	width: 100%;
+}
+.kiiii{
+	top: 250px;
+	right: 55px;
+	position: fixed;
+	color: white;
+	letter-spacing: 2px
+}
+.box-main{
+	width: 100%;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	display: block;
+	z-index: 50;
+
+}
+.box-fitLeft{
+	transition: all 0.2s ease-in-out 0s;
+	background: white;
+	top: 105px;
+	left: -125px;
+	position: fixed;
+
+}
+.box-fitLeft .box-content{
+/*	background: red;*/
+	width: 180px;
+	height: 100vh;
+}
+.item{
+	display: block;
+	padding: 10px;
+	float: left
+}
+.box-fitLeft .box-content .item:hover{
+	background: white
+}
+.box-fitLeft:hover{
+	left: 0;
+/*	transition: all 0.2s ease-in-out 0s*/
+}
+
+.section1{
+	width: 100%;	
+	height: 100%;	
+	flex: 0 0 auto;
+	display: flex;
+}
+.content1{
+	width: 100%;
+	height: 100%;
+/*	background: green;*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	
+}
+.thanh-ngang{
+	width: 80%;
+	height: 20px;
+	background: #f8a488;
+	position: absolute;
+	left: 150px;
+	z-index: 0
+}
+.Chu-O{
+	
+	font-family: Canopee;
+	position: absolute;
+	font-size: 2500px;
+	color: white;
+	text-decoration: none;
+	animation-name: xoayvong;
+	animation-iteration-count: infinite;
+	animation-duration: 110s;
+	animation-timing-function: ease-in-out;
+/*	background: gray;*/
+	line-height: 50px;
+}
+.Chu-O:before{
+	content: "O";
+	
+}
+
+@keyframes xoayvong{
+	0%{
+		transform: rotate(0) 
+	}
+	30%{
+		transform: rotate(360deg) translateX(100px)
+	}
+	50%{
+		transform: rotate(360deg) translateX(100px)
+	}
+}
+.portfolio{
+	font-size: 320px;
+	color: #2A5060;
+	font-family: Canopee;
+	position: absolute;	
+	z-index: 1000;
+	left: 120px
+	
+}
+.portfolio:before{
+	content: "Portfolio";
+
+}
+.name{
+	font-size: 25px;
+	color: white;
+	font-family: nam;
+	position: absolute;
+	z-index: 1;
+	margin: 500px 0 0 800px ;
+	text-transform: uppercase
+}
+.scale-grid{
+	width: 100%;
+	height: 15%;
+/*	background: red;*/
+	display: flex;
+/*	position: relative*/
+}
+.section2{
+	width: 400%;	
+	height: 100%;	
+	flex: 0 0 auto;
+	display: flex;
+}
+.content2{
+	width: 100%;
+	height: 100%	;
+/*	background: blue;*/
+	position: relative;
+	display: flex;
+/*	float: left;*/
+	justify-content: center;
+	align-items: center;	
+	margin-left: 200px;
+	bottom: 0;
+	left: 0;
+
+}
+.content2 .grid{
+	width: 100%;
+	height: 100%;
+	align-items: flex-end;	
+	display: flex;
+	position: absolute;
+	bottom: -10px;
+}
+.grid img{
+	width: 100%;
+	height: 30%;
+	bottom: 0;
+	left: 0;
+/*	background: red*/
+}
+.post{
+	width: 100%;
+	height: 100%	;
+/*	background: purple;*/
+/*	position: relative;*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 200
+}
+
+.frame1 img{
+	width: 70%;
+}
+.frame2 img{
+	width: 80%%
+} 
+.frame3 img{
+	width: 100%
+} 
+.frame4 img{
+	width: 100%
+} 
+.button1{
+	position: relative;
+	display: inline-block;
+	line-height: 60px;
+    text-align: center;
+	width: 500px;
+	height: 60px;
+/*	background-color: #49c5b6;	*/
+	text-decoration: none;
+	color: #2A5060;
+	font-size: 100px;
+	font-family: title;
+/*	border: 0.5px solid black;*/
+	bottom: -100px;
+	left: -200px
+}
+.button2{
+	position: relative;
+	display: inline-block;
+	line-height: 60px;
+    text-align: center;
+	width: 500px;
+	height: 60px;
+/*	background-color: #49c5b6;	*/
+	text-decoration: none;
+	color: #2A5060;
+	font-size: 100px;
+	font-family: title;
+/*	border: 0.5px solid black;*/
+	bottom: 0px;
+	left: 0
+}
+.button3{
+	position: relative;
+	display: inline-block;
+	line-height: 60px;
+    text-align: center;
+	width: 500px;
+	height: 60px;
+/*	background-color: #49c5b6;	*/
+	text-decoration: none;
+	color: #2A5060;
+	font-size: 100px;
+	font-family: title;
+/*	border: 0.5px solid black;*/
+	top: 100px;
+	left: -0px
+}
+.button4{
+	position: relative;
+	display: inline-block;
+	line-height: 60px;
+    text-align: center;
+	width: 500px;
+	height: 60px;
+/*	background-color: #49c5b6;	*/
+	text-decoration: none;
+	color: #2A5060;
+	font-size: 100px;
+	font-family: title;
+/*	border: 0.5px solid black;*/
+	bottom: -100px;
+	left: -200px
+}
+/*
+.button:hover .frame1{
+	visibility: visible;
+	background: red
+}
+*/
+

@@ -1,0 +1,24 @@
+.scroll-horizontal-container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: scroll;
+}
+.scroll-horizontal-container::-webkit-scrollbar {
+  display: none;
+}
+
+
+.progress-container {
+  width: 100%;
+  height: 2px;
+  background:  rgba(216,216,216,1.00);
+position: fixed;
+	bottom:43px;
+}
+
+.progress-bar {
+  height: 2px;
+  background: #F74133;
+  width: 0%;
+}
